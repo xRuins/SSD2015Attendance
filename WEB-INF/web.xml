@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+ version="2.4">
+ <!--
+    <servlet>
+        <servlet-name>
+            test
+        </servlet-name>
+        <servlet-class>
+            Test
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>
+            test
+        </servlet-name>
+        <url-pattern>
+            /test
+        </url-pattern>
+    </servlet-mapping>
+-->
+    <!-- Select Programme -->
+    <servlet>
+        <servlet-name>
+            SelectProgramme
+        </servlet-name>
+        <servlet-class>
+            edu.scit.ssd2015.attendance.SelectProgrammeServlet
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>
+            SelectProgramme
+        </servlet-name>
+        <url-pattern>
+            /SelectProgramme
+        </url-pattern>
+    </servlet-mapping>
+    
+    <servlet-mapping>
+        <servlet-name>
+            SelectProgramme
+        </servlet-name>
+        <url-pattern>
+            /
+        </url-pattern>
+    </servlet-mapping>
+    
+    <!-- Select Batch and Semester -->
+    <servlet>
+        <servlet-name>
+            SelectBatchAndSemester
+        </servlet-name>
+        <servlet-class>
+            edu.scit.ssd2015.attendance.SelectBatchAndSemesterServlet
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>
+            SelectBatchAndSemester
+        </servlet-name>
+        <url-pattern>
+            /SelectBatchAndSemester
+        </url-pattern>
+    </servlet-mapping>
+    
+    <!-- Select Division and Subject -->
+    <servlet>
+        <servlet-name>
+            SelectDivisionAndSubject
+        </servlet-name>
+        <servlet-class>
+            edu.scit.ssd2015.attendance.SelectDivisionAndSubjectServlet
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>
+            SelectDivisionAndSubject
+        </servlet-name>
+        <url-pattern>
+            /SelectDivisionAndSubject
+        </url-pattern>
+    </servlet-mapping>
+    
+    <!-- View Course -->
+    <servlet>
+        <servlet-name>
+            ViewCourse
+        </servlet-name>
+        <servlet-class>
+            edu.scit.ssd2015.attendance.ViewCourseServlet
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>
+            ViewCourse
+        </servlet-name>
+        <url-pattern>
+            /ViewCourse
+        </url-pattern>
+    </servlet-mapping>
+    
+    <!-- Create Attendance -->
+    <servlet>
+        <servlet-name>
+            CreateAttendance
+        </servlet-name>
+        <servlet-class>
+            edu.scit.ssd2015.attendance.CreateAttendanceServlet
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>
+            CreateAttendance
+        </servlet-name>
+        <url-pattern>
+            /CreateAttendance
+        </url-pattern>
+    </servlet-mapping>
+      
+    <!-- Take Attendance -->
+    <servlet>
+        <servlet-name>
+            TakeAttendance
+        </servlet-name>
+        <servlet-class>
+            edu.scit.ssd2015.attendance.TakeAttendanceServlet
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>
+            TakeAttendance
+        </servlet-name>
+        <url-pattern>
+            /TakeAttendance
+        </url-pattern>
+    </servlet-mapping>
+    
+    <!-- View Attendance -->
+    <servlet>
+        <servlet-name>
+            ViewAttendance
+        </servlet-name>
+        <servlet-class>
+            edu.scit.ssd2015.attendance.ViewAttendanceServlet
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>
+            ViewAttendance
+        </servlet-name>
+        <url-pattern>
+            /ViewAttendance
+        </url-pattern>
+    </servlet-mapping>
+    
+    <!-- UserInfo -->
+    <servlet>
+        <servlet-name>
+            User
+        </servlet-name>
+        <servlet-class>
+            edu.scit.ssd2015.attendance.UserServlet
+        </servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>
+            User
+        </servlet-name>
+        <url-pattern>
+            /user
+        </url-pattern>
+    </servlet-mapping>
+    
+</web-app>
