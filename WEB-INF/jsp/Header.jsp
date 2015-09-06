@@ -5,7 +5,7 @@
 	<img src="./css/scit2.png" style="position:absolute;left:50px;" width="60px" height="60px" />
 	</a><BR>
 	<SPAN style="margin-left:120px; "><font size="5" face="Courier">
-	Symbiosis Centre For Information Technology
+	SCIT Students' Attendance System
 	</font></SPAN>
 	<HR size="5" align="bottom" width="100%" color="F3F1F1">
 </div>
