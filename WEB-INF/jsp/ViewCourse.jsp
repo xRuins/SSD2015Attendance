@@ -27,31 +27,60 @@ ArrayList<Attendance> attendances = Attendance.getAttendanceByCourseID(courseID)
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Course Information</title>
+<link rel="stylesheet" type=text/css href="./css/header.css" >
+<link rel="stylesheet" type=text/css href="./css/navi.css">
+<link rel="stylesheet" type=text/css href="./css/table.css" >
+<link rel="stylesheet" type=text/css href="./css/button3.css">
+<link rel="stylesheet" type=text/css href="./css/font.css" >
 </head>
-<body>
-<h1>Course - <%= course.getSubject().getName() %>
+<body bgcolor="#F3F1F1">
+<jsp:include page="Header.jsp"/>
+<div id="contentsArea">
+
+	<BR>
+	<div style="text-align : center">
+	<div style="background:#fdfdfd; width:580px; border: 1px solid #D3D3D3; height:100％;
+	 padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:50px;
+ 	 margin-left : auto ; margin-right : auto ;">
+
+	<h1 class="emboss">Course - <%= course.getSubject().getName() %>
 : <%= course.getDivision().getName() %> </h1>
-<%
+
+<BR><BR>
+
+<table id="mytable">
+<table align="center">
+	<tr>
+	</tr>
+	<tr>
+		<td>
+		<table id="mytable">
+			<tr>
+				<th scope="col" abbr="Dual 1.8">Name</th>
+			</tr>
+			<%
 if (attendances.isEmpty()) {
-	out.println("<h4>No attendance has taken yet.</h4>");
+	out.println("<tr><td>No attendance has taken yet.</td></tr>");
 } else {
-	out.println("<ul>");
 	for (Attendance attendance: attendances) {
     	String attendanceID = String.valueOf(attendance.getAttendanceID());
    		Date attendanceDate = attendance.getAttendanceDate();
-    	String option = "<li><a href='/TestTomcat/ViewAttendance?attendanceID=" + attendanceID + "'>" + attendanceDate.toString() + "</a></li>";
+    	String option = "<tr><td><a href='/TestTomcat/ViewAttendance?attendanceID=" +
+   		attendanceID + "'>" + attendanceDate.toString() + "</a></td></tr>";
     	out.println(option);
 	}
-	out.println("</ul>");
 }
 %>
-<h4>Take New Attendance</h4>
+</table>
+</td></tr></table>
+</table>
 
 <form action="TakeAttendance" method="get">
 <input type="date" name="attendanceDate">
 <input type="hidden" name="courseID" value="<%= courseID %>">
-<input type="submit" value="Take New Attendance" />
+<input type="submit" value="Take New Attendance" class="button" />
 </form>
 
+<jsp:include page="Footer.jsp"/>
 </body>
 </html>

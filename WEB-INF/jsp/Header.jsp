@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<div class="header">
-	<div class="scit-badge">
-		<img src="./res/scitbadge.png" />
-	</div>
-	<div class="title">
-		<h3>Student Attendance System</h3>
-	</div>
+<div id="headerArea">
+	<a href="http://www.scit.edu/">
+	<img src="./css/scit2.png" style="position:absolute;left:50px;" width="60px" height="60px" />
+	</a><BR>
+	<SPAN style="margin-left:120px; "><font size="5" face="Courier">
+	Symbiosis Centre For Information Technology
+	</font></SPAN>
+	<HR size="5" align="bottom" width="100%" color="F3F1F1">
 </div>

@@ -9,13 +9,46 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<link rel="stylesheet" type=text/css href="./css/header.css" >
+<link rel="stylesheet" type=text/css href="./css/navi.css">
+<link rel="stylesheet" type=text/css href="./css/table2.css" >
+<link rel="stylesheet" type=text/css href="./css/button.css" >
+<link rel="stylesheet" type=text/css href="./css/font.css" >
+
 <title>Programme Select</title>
 </head>
 <body>
 <jsp:include page="Header.jsp"/>
-<h1>Please select programme</h1>
+
+
+<div id="contentsArea">
+
+	<BR>
+	<div style="text-align : center">
+	<div style="background:#fdfdfd; width:580px; border: 1px solid #D3D3D3; height:100％;
+	 padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:50px;
+ 	 margin-left : auto ; margin-right : auto ;">
+
+ 
+	<ul id="breadcrumbs-one">
+    <li><a class="current">Programme</a></li>
+    <li><a >Batch and Semester</a></li>
+    <li><a >Division and Subject</a></li>
+	</ul>
+
+
 <form action="SelectBatchAndSemester" method="GET">
-<select name="programmeID">
+	<div style="background:#fdfdfd; width:300px; height:100％;
+	 padding-left:10px; padding-right:10px; padding-top:50px; padding-bottom:50px;
+ 	 margin-left : auto ; margin-right : auto ;">
+		<table class="sample_05" align="center">
+			<tbody>
+			<tr>
+			<th>Programme</th>
+			</tr>
+			<tr>
+			<td><select name="programmeID">
 <%
 for (Programme programme: programmes) {
     String programmeID = String.valueOf(programme.getProgrammeID());
@@ -25,8 +58,19 @@ for (Programme programme: programmes) {
 }
 %>
 </select>
-<input type="submit" value="next" />
+</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<input type="submit" value="Next" class="button"/>
+	<BR><BR>
 </form>
+	
+	</div>	
+	</div>
+</div>
+
 <jsp:include page="Footer.jsp"/>
 </body>
 </html>

@@ -41,15 +41,6 @@
         </url-pattern>
     </servlet-mapping>
     
-    <servlet-mapping>
-        <servlet-name>
-            SelectProgramme
-        </servlet-name>
-        <url-pattern>
-            /
-        </url-pattern>
-    </servlet-mapping>
-    
     <!-- Select Batch and Semester -->
     <servlet>
         <servlet-name>

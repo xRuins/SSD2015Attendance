@@ -54,6 +54,7 @@ public class CreateAttendanceServlet extends HttpServlet {
 			as.save();
 			System.out.println("[CrtAtndSvlt] as : "+ as.getAttendanceID() + "," + as.getStudentID());
 		}
+		req.setAttribute("attendanceID", attendanceID); // set attendanceID to go back to attendance
 		
 		String forward = JSP_BASE + "CreateAttendance.jsp";
 		

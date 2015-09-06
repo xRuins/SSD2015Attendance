@@ -13,14 +13,43 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Division and Subject Select</title>
+<link rel="stylesheet" type=text/css href="./css/header.css" >
+<link rel="stylesheet" type=text/css href="./css/navi.css">
+<link rel="stylesheet" type=text/css href="./css/table.css" >
+<link rel="stylesheet" type=text/css href="./css/button3.css">
+<link rel="stylesheet" type=text/css href="./css/font.css" >
 </head>
-<body>
+<body bgcolor="#F3F1F1">
 <jsp:include page="Header.jsp"/>
-<h1>Please select Division and Subject</h1>
-<form action="ViewCourse" method="GET">
-Subject : 
-<select name="subjectID">
-<%
+
+<div id="contentsArea">
+	<form action="ViewCourse" method="GET">
+	<BR>
+	<div style="text-align : center">
+	<div style="background:#fdfdfd; width:580px; border: 1px solid #D3D3D3; height:100％;
+	 padding-left:10px; padding-right:10px; padding-top:10px; padding-bottom:50px;
+ 	 margin-left : auto ; margin-right : auto ;">
+
+ 
+	<ul id="breadcrumbs-one">
+    <li><a >Programme</a></li>
+    <li><a >Batch and Semester</a></li>
+    <li><a class="current">Division and Subject</a></li>
+	</ul>
+
+
+	<div style="background:#fdfdfd; width:300px; height:100％;
+	 padding-left:10px; padding-right:10px; padding-top:50px; padding-bottom:50px;
+ 	 margin-left : auto ; margin-right : auto ;">
+		<table class="sample_05">
+			<tbody>
+			<tr>
+			<th>Division</th>
+			<th>Subject</th>
+			</tr>
+			<tr>
+			<td><select name="subjectID">
+			<%
 for (Subject subject: subjects) {
     String subjectID = String.valueOf(subject.getSubjectID());
     String name = subject.getName();
@@ -28,10 +57,9 @@ for (Subject subject: subjects) {
     out.println(option);
 }
 %>
-</select>
+			</select></td>
+			<td><select name="divisionID">
 
-Division : 
-<select name="divisionID">
 <%
 for (Division division: divisions) {
     String divisionID = String.valueOf(division.getDivisionID());
@@ -40,9 +68,17 @@ for (Division division: divisions) {
     out.println(option);
 }
 %>
-</select>
-<input type="submit" value="next" />
-</form>
+		</select></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+	<input class="button" value="Next" type="submit" /><BR><BR>
+	
+	</div>	
+	</div>
+	</form>
+</div>
 <jsp:include page="Footer.jsp"/>
 </body>
 </html>

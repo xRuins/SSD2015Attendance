@@ -1,0 +1,52 @@
+@CHARSET "UTF-8";
+
+.button,
+.button2 {
+	display: inline-block;
+	width: 130px;
+	height: 30px;
+	text-align: center;
+	text-decoration: none;
+	line-height: 30px;
+	outline: none;
+	letter-spacing: 1px;
+}
+
+.button::before,
+.button::after,
+.button2::before,
+.button2::after {
+	position: absolute;
+	z-index: -1;
+	display: block;
+	content: '';
+}
+
+.button,
+.button::before,
+.button::after,
+.button2,
+.button2::before,
+.button2::after  {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-transition: all .3s;
+	transition: all .3s;
+}
+
+.button,
+.button2 {
+	background-color: #e56563;
+	color: #fff;
+}
+
+.button2 {
+	background-color: #B89AF4;
+	color: #fff;
+}
+
+.button:hover,
+.button2:hover {
+	letter-spacing: 5px;
+}

@@ -48,6 +48,10 @@ public class Attendance {
 		return attendances;
 	}
 	
+	public Course getCourse() {
+		return Course.getCourseByID(getCourseID());
+	}
+	
 	public ArrayList<User> getStudent() {
 		ArrayList<User> students = new ArrayList<>();
 		ArrayList<AttendanceStudent> attendanceStudents = new ArrayList<>();
