@@ -18,7 +18,7 @@
 
 <title>Programme Select</title>
 </head>
-<body>
+<body bgcolor="#F3F1F1">
 <jsp:include page="Header.jsp"/>
 
 
@@ -63,7 +63,7 @@ for (Programme programme: programmes) {
 			</tbody>
 		</table>
 	</div>
-	<input type="submit" value="Next" class="button"/>
+	<input class="button" type="submit" value="Next" />
 	<BR><BR>
 </form>
 	

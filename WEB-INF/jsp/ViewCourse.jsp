@@ -30,6 +30,7 @@ ArrayList<Attendance> attendances = Attendance.getAttendanceByCourseID(courseID)
 <link rel="stylesheet" type=text/css href="./css/header.css" >
 <link rel="stylesheet" type=text/css href="./css/navi.css">
 <link rel="stylesheet" type=text/css href="./css/table.css" >
+<link rel="stylesheet" type=text/css href="./css/table2.css" >
 <link rel="stylesheet" type=text/css href="./css/button3.css">
 <link rel="stylesheet" type=text/css href="./css/font.css" >
 </head>
@@ -46,7 +47,6 @@ ArrayList<Attendance> attendances = Attendance.getAttendanceByCourseID(courseID)
 	<h1 class="emboss">Course - <%= course.getSubject().getName() %>
 : <%= course.getDivision().getName() %> </h1>
 
-<BR><BR>
 
 <table id="mytable">
 <table align="center">
@@ -56,7 +56,7 @@ ArrayList<Attendance> attendances = Attendance.getAttendanceByCourseID(courseID)
 		<td>
 		<table id="mytable">
 			<tr>
-				<th scope="col" abbr="Dual 1.8">Name</th>
+				<th scope="col" abbr="Dual 1.8">Date</th>
 			</tr>
 			<%
 if (attendances.isEmpty()) {

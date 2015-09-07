@@ -44,8 +44,8 @@
 		<table class="sample_05">
 			<tbody>
 			<tr>
-			<th>Division</th>
 			<th>Subject</th>
+			<th>Division</th>
 			</tr>
 			<tr>
 			<td><select name="subjectID">

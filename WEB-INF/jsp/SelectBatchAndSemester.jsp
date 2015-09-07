@@ -75,7 +75,7 @@ for (Semester semester: semesters) {
 			</tbody>
 		</table>
 	</div>
-	<input type="submit" class="button" vakue="Next" /><BR><BR>
+	<input type="submit" class="button" value="Next" /><BR><BR>
 	
 	</div>	
 	</div>
